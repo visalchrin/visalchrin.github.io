@@ -1,118 +1,130 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-        <link href="styles.css" rel="stylesheet">
-        <title>general information</title>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>The 2021 Frontend Developer Crash Course</title>
+   <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   <div class="navbar">
+      <div class="container">
+         <a class="logo" href="#">Remember<span>That</span></a>
 
-        <script>
-            function load()
-            {
-                let i = 0;
-                document.querySelector('#b1').onclick = function()
-                {
-                    if (!i)
-                    {
-                        document.querySelector('#p1').innerHTML = 'The first human cases of COVID-19, the disease caused by the novel coronavirus causing COVID-19, subsequently named SARS-CoV-2 were first reported by officials in Wuhan City, China, in December 2019.';
-                        i = 1;
-                        document.querySelector('#b1').innerHTML ='See less';
+         <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
 
-                    }
-                    else
-                    {
-                        document.querySelector('#p1').innerHTML = 'The first human cases of COVID-19, the disease caused by the novel coronavirus causing COVID-19';
-                        i = 0;
-                        document.querySelector('#b1').innerHTML ='See More';
-                    }
-                }
+         <nav>
+               <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+               
+               <ul class="primary-nav">
+                  <li class="current"><a href="#">Home</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Pricing</a></li>
+               </ul>
 
-                document.querySelector('#b2').onclick = function()
-                {
-                    if (!i)
-                    {
-                        document.querySelector('#p2').innerHTML = 'COVID-19 is caused by the SARS-CoV-2 virus, which spreads between people, mainly when an infected person is in close contact with another person. Other people can catch COVID-19 when the virus gets into their mouth, nose or eyes, which is more likely to happen when people are in direct or close contact (less than 1 metre apart) with an infected person. Current evidence suggests that the main way the virus spreads is by respiratory droplets among people who are in close contact with each other. Aerosol transmission can occur in specific settings, particularly in indoor, crowded and inadequately ventilated spaces, where infected person(s) spend long periods of time with others, such as restaurants, choir practices, fitness classes, nightclubs, offices and/or places of worship. More studies are underway to better understand the conditions in which aerosol transmission is occurring outside of medical facilities where specific medical procedures, called aerosol generating procedures, are conducted. The virus can also spread after infected people sneeze, cough on, or touch surfaces, or objects, such as tables, doorknobs and handrails. Other people may become infected by touching these contaminated surfaces, then touching their eyes, noses or mouths without having cleaned their hands first.';
-                        i = 1;
-                        document.querySelector('#b2').innerHTML ='See less';
+               <ul class="secondary-nav">
+                  <li><a href="#">Contact</a></li>
+                  <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+               </ul>
+         </nav>
+      </div>
+   </div>
 
-                    }
-                    else
-                    {
-                        document.querySelector('#p2').innerHTML ='COVID-19 is caused by the SARS-CoV-2 virus, which spreads between people, mainly when an infected person is in';
-                        i = 0;
-                        document.querySelector('#b2').innerHTML ='See More';
-                    }
-                }
+   <section class="hero">
+      <div class="container">
+         <div class="left-col">
+               <p class="subhead">It's Nitty &amp; Gritty</p>
+               <h1>A Task App That Doesn't Stink</h1>
 
-                document.querySelector('#b3').onclick = function()
-                {
-                    if (!i)
-                    {
-                        document.querySelector('#p3').innerHTML = 'Whether or not they have symptoms, infected people can be contagious and the virus can spread from them to other people.Laboratory data suggests that infected people appear to be most infectious just before they develop symptoms (namely 2 days before they develop symptoms) and early in their illness. People who develop severe disease can be infectious for longer.While someone who never develops symptoms can pass the virus to others, it is still not clear how frequently this occurs and more research is needed in this area.';
-                        document.querySelector('#b3').innerHTML ='See less';
-                        i = 1;
-                    }
-                    else
-                    {
-                        document.querySelector('#p3').innerHTML ='Whether or not they have symptoms, infected people can be contagious and the virus can';
-                        i = 0;
-                        document.querySelector('#b3').innerHTML ='See More';
-                    }
-                }
+               <div class="hero-cta">
+                  <a href="#" class="primary-cta">Try for free</a>
+                  <a href="#" class="watch-video-cta">
+                     <img src="images/watch.svg" alt="Watch a video">Watch a video
+                  </a>
+               </div>
+         </div>
 
-                function blink()
-                {
-                    let warning = document.querySelector('#warning');
-                    if ( warning.style.visibility === 'hidden')
-                    {
-                        warning.style.visibility = "visible";
-                    }
-                    else
-                    {
-                        warning.style.visibility ='hidden';
-                    }
-                }
-                window.setInterval(blink, 1500);
-            }
+         <img src="images/illustration.svg" class="hero-img" alt="Illustration">
+      </div>
+   </section>
 
-            document.addEventListener('DOMContentLoaded', load);
-        </script>
+   <section class="features-section">
+      <div class="container">
+         <ul class="features-list">
+            <li>Unlimited Task</li>
+            <li>SMS Task Remainders</li>
+            <li>Confeti Exposions upon Task Completions</li>
+            <li>Socail Media Annoumcements</li>
+            <li>Real Time Collaboration</li>
+            <li>Other awesome features</li>
+         </ul>
 
-    </head>
-    <body>
-        <div class="mydiv">
-            <h3 class="header" id ="warning">Please wear mask, keep the distance, wash hands!</h3>
-        </div>
-        <h1 class ="header">Covid-19 General Information</h1>
-        <img src="covid19-1600x900-1.jpg" width= 200 height= 100 alt="Covid-19 Virus Picture">
-        <ul>
-            <li><h5 class="sub_header">Where was the first case of the coronavirus disease identified?</h5></li>
+         <img src="images/holding-phone.jpg" alt="Holding Phone">
+      </div>
+   </section>
 
-            <p id="p1">The first human cases of COVID-19, the disease caused by the novel coronavirus causing COVID-19</p>
-            <button id="b1">Read More</button>
+   <section class="testimonails-section">
+      <div class="container">
+         <ul>
+            <li>
+               <img src="images/person.jpg" alt="Person">
+               <blockquote>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga et voluptatibus laborum voluptate harum possimus est iste sint, assumenda animi illum, voluptatum qui quibusdam inventore esse. Ex iste perferendis esse!"</blockquote>
+               <cite>-Jane Doe</cite>
+            </li>
 
-            <li><h5 class="sub_header">How does Covid-19 spread between people?</h5></li>
+            <li>
+               <img src="images/person.jpg" alt="Person">
+               <blockquote>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga et voluptatibus laborum voluptate harum
+                  possimus est iste sint, assumenda animi illum, voluptatum qui quibusdam inventore esse. Ex iste perferendis esse!"
+               </blockquote>
+               <cite>-Jane Doe</cite>
+            </li>
 
-            <p id ="p2">COVID-19 is caused by the SARS-CoV-2 virus, which spreads between people, mainly when an infected person is in</p>
-            <button id ="b2">Read More</button>
+            <li>
+               <img src="images/person.jpg" alt="Person">
+               <blockquote>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga et voluptatibus laborum voluptate harum
+                  possimus est iste sint, assumenda animi illum, voluptatum qui quibusdam inventore esse. Ex iste perferendis esse!"
+               </blockquote>
+               <cite>-Jane Doe</cite>
+            </li>
+         </ul>
+      </div>
+   </section>
 
-            <li><h5 class="sub_header">Who do infected people transmit the virus?</h5></li>
+   <section class="contact-section">
+      <div class="container">
+         <div class="contact-left">
+            <h2>Contact</h2>
+            
+            <form action="">
+               <label for="name">Name</label>
+               <input type="text" id="name" name="name">
 
-            <p id="p3">Whether or not they have symptoms, infected people can be contagious and the virus can</p>
-            <button id="b3">Read More</button>
-        </ul>
-        <ol>
-            <h5 class="header">Also see more:</h5>
-            <a href="protect.html"><li> How to Protect Yourself</li></a>
-            <a href="camupdate.html"><li>Covid-19 Update in Cambodia</li></a>
-            <a href="world.html"><li>Covid-19 Update around the world</li></a>
-        </ol>
+               <label for="message">Message</label>
+               <textarea name="message" id="message" cols="30" rows="10"></textarea>
 
-        <p class="source">Source:World Health Organization</p>
-        <div class="alert alert-warning" role="alert">
-              No one can help you, unless yourself.Please Stay home!
-        </div>
-    </body>
+               <input type="submit" class="send-message-cta" value="Send Message">
+            </form>
+         </div>
+         <div class="contact-right">
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3994180.295098863!2d102.73559569001459!3d12.14177193431496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310787bfd4dc3743%3A0xe4b7bfe089f41253!2sCambodia!5e0!3m2!1sen!2skh!4v1622973061177!5m2!1sen!2skh"
+               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         </div>
+      </div>
+   </section>
+   <script>
+      const mobileBtn = document.getElementById("mobile-cta"),
+      nav = document.querySelector("nav"),
+      mobileBtnExit = document.getElementById("mobile-exit");
+
+      mobileBtn.addEventListener("click", ()=>{
+         nav.classList.add("menu-btn");
+      });
+
+      mobileBtnExit.addEventListener("click", ()=>{
+         nav.classList.remove("menu-btn");
+      })
+   </script>
+</body>
 </html>
