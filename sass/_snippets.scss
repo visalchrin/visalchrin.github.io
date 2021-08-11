@@ -1,0 +1,49 @@
+.snippets {
+  &__content {
+    position: relative;
+    width: 100%;
+
+    @include breakpoint(large) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__features {
+    @include breakpoint-left(small) {
+      text-align: center;
+    }
+
+    @include breakpoint(medium) {
+      text-align: center;
+    }
+
+    @include breakpoint(large) {
+      text-align: left;
+      margin-top: -65px;
+      margin-left: 55px;
+
+      p {
+        max-width: 340px;
+      }
+    }
+  }
+
+  &__image {
+    margin-bottom: 60px;
+
+    @include breakpoint(large) {
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 80%;
+      max-width: 500px;
+      @include breakpoint(large) {
+        max-width: none;
+        width: 70%;
+        transform: translateX(-55px);
+      }
+    }
+  }
+}
