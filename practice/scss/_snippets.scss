@@ -1,0 +1,41 @@
+.snippets {
+  // padding-left: 50px;
+  // padding-right: 50px;
+  &__content {
+    @include breakpoint(large) {
+      display: flex;
+      text-align: left;
+    }
+  }
+
+  &__image {
+    max-width: 600px;
+    img {
+      width: 70%;
+
+      @include breakpoint(medium) {
+        width: 60%;
+      }
+
+      @include breakpoint(large) {
+        width: 80%;
+        margin-right: 150px;
+        transform: translateX(-150px);
+      }
+    }
+  }
+
+  &__features {
+    @include breakpoint(large) {
+      text-align: left;
+      max-width: 500px;
+      margin-left: -100px;
+      margin-top: -20px;
+    }
+    p {
+      max-width: 300px;
+      margin-bottom: 0px;
+      display: inline-block;
+    }
+  }
+}
