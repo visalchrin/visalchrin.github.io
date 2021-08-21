@@ -1,187 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Clipboard landing page</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="./sass/styles.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <!-- Hero Section -->
-  <section class="hero wrapper centered">
-    <img class="hero__logo" src="./images/logo.svg" width="125" alt="logo">
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-    <div class="content">
-      <h1>A history of <br> everything you copy</h1>
-      <p class="margin-bottom large">
-        Clipboard allows you to track and organize everything you
-        copy. Instantly access your clipboard on all your devices.
-      </p>
-      
-      <div class="hero__cta">
-        <button class="cyan">Download for iOS</button>
-        <button class="purple">Download for Mac</button>
-      </div>
-    </div>
-  </section>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Snippets -->
-  <section class="snippets wrapper centered">
-    <div class="content">
-      <h2>Keep track of your snippets</h2>
-      <p class="medium lg-margin-bottom">
-        Clipboard instantly stores any item you copy in the cloud,
-        meaning you can access your snippets immediately on all your
-        devices. Our Mac and iOS apps will help you organize everything.
-      </p>
-    </div>
-
-    <div class="snippets__content">
-      <div class="snippets__image">
-        <img src="./images/image-computer.png" alt="image computer">
-      </div> 
-      <div class="snippets__features">
-        <h3>Quick Search</h3>
-        <p class="small">
-          Easily search your snippets by content, category, web address, application, and more.
-        </p>
-        <h3>iCloud Sync</h3>
-        <p class="small">
-          Instantly saves and syncs snippets across all your devices.
-        </p>
-        <h3>Complete History</h3>
-        <p class="small">
-          Retrieve any snippets from the first moment you started using the app.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Access -->
-  <section class="access wrapper centered">
-    <div class="content">
-      <h2>Access Clipboard anywhere</h2>
-      <p class="captions medium">
-        Whether you’re on the go, or at your computer, you can access all your Clipboard
-        snippets in a few simple clicks.
-      </p>
-
-      <img class="medium" src="./images/image-devices.png" alt="device">
-    </div>
-
-  </section>
-  <!-- Supercharge -->
-  <section class="supercharge wrapper centered">
-    <div class="content">
-      <h2>Supercharge your workflow</h2>
-      
-      <p class="captions medium">
-        We’ve got the tools to boost your productivity.
-      </p>
-    </div>
-    <div class="supercharge__columns">
-      <div class="supercharge__column">
-        <div class="supercharge__icon">
-          <img src="./images/icon-blacklist.svg" alt="blacklists">
+    <link rel="stylesheet" href="./scss/styles.css" />
+  </head>
+  <body>
+    <!-- Start header section -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__container--logo">
+          <div class="logo">
+            <img id="logo" src="./images/logo.svg" alt="logo" />
+            <img class="hamburger" id="hamburger" src="./images/icon-hamburger.svg" alt="icon-hamburger" />
+          </div>
+          <!-- show mobile -->
+          <div id="mobile" style="display: none;">
+            <div class="mobile">
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Projects</a>
+              <a class="button" href="#">Contact</a>
+            </div>
+          </div>
+          <div class="desktop">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a class="button" href="#">Contact</a>
+          </div>
         </div>
-        <h3>Create blacklists</h3>
-
-        <p class="captions small">
-          Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
-        </p>
-      </div>
-      <div class="supercharge__column">
-        <div class="supercharge__icon">
-          <img src="./images/icon-text.svg" alt="icon-text">
+        <div class="header__container--caption">
+          <h1>We are creatives</h1>
+          <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
         </div>
-        <h3>Plain text snippets</h3>
+      </div>
+    </header>
+
+    <!-- Start features sections -->
+    <section class="features">
+      <div class="features__picture features__pic1">
+      </div>
+      <div class="features__caption features__caption1">
+        <h3>Transform your <br> brand</h3>
+        <p>
+          We are a full-service creative agency
+          specializing in helping brands grow fast. Engage your clients through
+          compelling visuals that do most of the marketing for you.
+        </p>
+        <a class="learn-more-yellow" href="#">Learn more</a>
+      </div>
+      <div class="features__picture features__pic2">
+      </div>
+      <div class="features__caption features__caption2">
+        <h3>Stand out to the right <br> audience</h3>
+        <p>
+          Using a collaborative formula of designers,
+          researchers, photographers, videographers, and copywriters, we’ll build and
+          extend your brand in digital places.
+        </p>
+        <a class="learn-more-red" href="#">Learn more</a>
+      </div>
+      <div class="features__picture features__pic3">
+        <div class="caption">
+          <h3>Graphic design</h3>
+          <p>
+            Great design makes you memorable. We deliver artwork that underscores your brand message
+            and captures potential clients’ attention.
+          </p>
+        </div>
+      </div>
+      <div class="features__picture features__pic4">
+        <div class="caption">
+          <h3>Photography</h3>
+          <p>
+            Increase your
+            credibility by getting the most stunning, high-quality photos that improve
+            your business image.
+          </p>
+        </div>
         
-        <p class="captions small">
-          Remove unwanted formatting from copied text for a consistent look.
-        </p>
       </div>
-      <div class="supercharge__column">
-        <div class="supercharge__icon">
-          <img src="./images/icon-preview.svg" alt="view">
+    </section>
+
+    <!-- Start testimonail section -->
+    <section class="testimonail">
+      <h2>Client testimonials</h2>
+      <div class="testimonail__container">
+        <div class="testimonail__container-item">
+          <img src="./images/image-emily.jpg" alt="Emily">
+          <p>
+            We put our trust in Sunnyside and
+            they delivered, making sure our needs were met and deadlines were always
+            hit.
+          </p>
+          <h4>Emily R.</h4>
+          <p class="duty">
+            Marketing Director
+          </p>
         </div>
-        <h3>Sneak preview</h3>
+        
+        <div class="testimonail__container-item">
+          <img src="./images/image-jennie.jpg" alt="Jennie">
+          <p>
+            Sunnyside’s enthusiasm coupled with their
+            keen interest in our brand’s success made it a satisfying and enjoyable
+            experience.
+          </p>
+          <h4>Thomas S.</h4>
+          <p class="duty">
+            Chief Operating Officer
+          </p>
+        </div>
+        
+        <div class="testimonail__container-item">
+          <img src="./images/image-thomas.jpg" alt="Thomas">
+          <p>
+            Incredible end result! Our
+            sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </p>
+          <h4>Jennie F.</h4>
+          <p class="duty">
+            Business Owner
+          </p>
+        </div>
+      </div>
+      
+    </section>
 
-        <p class="captions small">
-          Quick preview of all snippets on your Clipboard for easy access.
-        </p>
-    
-      </div>
-    </div>
-  </section>
-  <!-- Start logo sections -->
-  <section class="logos wrapper">
-    <div class="logos__container">
-      <div class="logo">
-        <img src="./images/logo-google.png" alt="google">
-      </div>
-      <div class="logo">
-        <img src="./images/logo-hp.png" alt="hp">
-      </div>
-      <div class="logo">
-        <img src="./images/logo-ibm.png" alt="ibm">
-      </div>
-      <div class="logo">
-        <img src="./images/logo-microsoft.png" alt="microsoft">
-      </div>
-      <div class="logo">
-        <img src="./images/logo-vector-graphics.png" alt="graphic">
-      </div>
-    </div>
-  </section>
+    <!-- Start design section -->
+    <section class="design">
+      <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles">
+      <img src="./images/desktop/image-gallery-orange.jpg" alt="image-gallery-orange">
+      <img src="./images/desktop/image-gallery-cone.jpg" alt="image-gallery-cone">
+      <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="image-gallery-sugarcubes">
+      
+    </section>
 
-  <!-- Start cta section -->
-  <section class="cta wrapper centered">
-    <div class="content">
-      <h2>Clipboard for iOS and Mac OS</h2>
-      <p class="captions medium">
-        Available for free on the App Store. Download for Mac or iOS, sync with iCloud
-        and you’re ready to start adding to your clipboard.
-      </p>
-
-
-      <div class="hero__cta">
-        <button class="cyan">Download for iOS</button>
-        <button class="purple">Download for Mac</button>
+    <!-- Start footer section -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__container-logo">
+          <svg width="124" height="24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.857 18.708c1.638 0 2.995-.36 4.07-1.08 1.075-.721 1.613-1.769 1.613-3.144-.083-1.855-1.464-3.246-4.144-4.173l-1.44-.597c-.314-.1-.538-.198-.67-.298a.45.45 0 01-.198-.373c0-.414.273-.62.819-.62.678 0 1.182.347 1.513 1.043l3.698-1.044c-.893-2.22-2.614-3.329-5.162-3.329-1.522 0-2.788.398-3.797 1.193C1.15 7.08.645 8.116.645 9.39c0 .398.058.766.174 1.106.116.34.29.638.521.894.232.257.455.48.67.671.215.19.488.369.82.534.33.166.582.286.756.36.174.075.41.162.707.261l.422.15 1.49.546c.363.133.6.244.707.335a.449.449 0 01.16.36c0 .431-.404.647-1.215.647-1.191 0-1.903-.53-2.134-1.59L0 14.509c.463 2.8 2.416 4.2 5.857 4.2zm11.636 0c1.638 0 2.845-.63 3.623-1.888v1.615h5.112V5.366h-5.112v7.156c0 1.474-.505 2.21-1.514 2.21-1.026 0-1.539-.736-1.539-2.21V5.366h-5.112v7.653c0 3.793 1.514 5.69 4.542 5.69zm16.103-.273V11.28c0-1.475.504-2.212 1.513-2.212 1.026 0 1.54.737 1.54 2.212v7.155h5.111v-7.652c0-3.793-1.513-5.69-4.541-5.69-1.638 0-2.846.63-3.623 1.888V5.366h-5.113v13.069h5.113zm15.383 0V11.28c0-1.475.504-2.212 1.514-2.212 1.025 0 1.538.737 1.538 2.212v7.155h5.113v-7.652c0-3.793-1.514-5.69-4.542-5.69-1.638 0-2.846.63-3.623 1.888V5.366h-5.113v13.069h5.113zM64.958 24l8.289-18.634H67.91l-2.532 6.684-2.258-6.684h-5.584l5.435 11.802L59.944 24h5.014zm13.67-5.292c1.638 0 2.995-.36 4.07-1.08 1.076-.721 1.614-1.769 1.614-3.144-.083-1.855-1.465-3.246-4.145-4.173l-1.44-.597c-.314-.1-.537-.198-.67-.298a.45.45 0 01-.198-.373c0-.414.273-.62.819-.62.678 0 1.183.347 1.514 1.043l3.698-1.044c-.894-2.22-2.614-3.329-5.162-3.329-1.522 0-2.788.398-3.797 1.193-1.01.795-1.514 1.83-1.514 3.105 0 .398.058.766.173 1.106.116.34.29.638.522.894.231.257.455.48.67.671.215.19.488.369.819.534.33.166.583.286.757.36.173.075.41.162.707.261l.422.15 1.489.546c.364.133.6.244.707.335a.449.449 0 01.161.36c0 .431-.405.647-1.216.647-1.19 0-1.902-.53-2.134-1.59l-3.723.844c.464 2.8 2.416 4.2 5.857 4.2zm9.8-14.137c.91 0 1.613-.215 2.11-.646.495-.43.744-.977.744-1.64 0-.678-.24-1.23-.72-1.651C90.082.21 89.371 0 88.428 0c-.943 0-1.655.211-2.135.634-.48.422-.72.973-.72 1.652 0 .662.249 1.209.745 1.64.497.43 1.2.645 2.11.645zm2.556 13.864V5.366H85.87v13.069h5.113zm7.74.273c1.737 0 2.977-.63 3.722-1.888v1.615h5.112V.472h-5.112v6.534c-.745-1.275-1.985-1.913-3.723-1.913-1.753 0-3.214.642-4.38 1.926-1.166 1.283-1.75 2.91-1.75 4.882 0 1.97.584 3.598 1.75 4.882 1.166 1.283 2.627 1.925 4.38 1.925zm1.39-3.9c-.729 0-1.312-.274-1.75-.82-.439-.547-.658-1.243-.658-2.087 0-.845.215-1.54.645-2.087.447-.547 1.034-.82 1.762-.82s1.311.273 1.75.82c.438.546.657 1.242.657 2.087 0 .844-.219 1.54-.657 2.087-.439.546-1.022.82-1.75.82zm16.698 3.9c2.597 0 4.624-.754 6.08-2.26l-2.11-2.833c-1.042.845-2.217 1.267-3.524 1.267-.992 0-1.799-.224-2.42-.67-.62-.448-.93-.879-.93-1.293h9.604c.083-.298.124-.687.124-1.167 0-2.054-.674-3.677-2.022-4.87-1.349-1.193-3.073-1.789-5.175-1.789-2.25 0-4.028.671-5.335 2.013-1.307 1.341-1.961 2.956-1.961 4.844 0 1.938.69 3.549 2.072 4.833 1.382 1.283 3.247 1.925 5.597 1.925zm2.208-8.149h-5.112c.033-.613.298-1.08.794-1.404.496-.323 1.084-.484 1.762-.484.678 0 1.266.165 1.762.497.497.331.761.795.794 1.391z"
+              fill="#25564b" fill-rule="nonzero" />
+          </svg>
+        </div>
+        <div class="footer__container-links">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer__container-social">
+          <a href="#"><img src="./images/icon-facebook.svg" alt="icon-facebook"></a>
+          <a href="#"><img src="./images/icon-instagram.svg" alt="icon-instagram"></a>
+          <a href="#"><img src="./images/icon-pinterest.svg" alt="icon-pinterest"></a>
+          <a href="#"><img src="./images/icon-twitter.svg" alt="icon-twitter"></a>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Start footer section -->
-  <footer>
-    <div class="footer-container">
-      <div class="logo">
-        <img src="./images/logo.svg" alt="logo">
-      </div>
-      <div class="links">
-        <a href="#">FAQs</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Press Kit</a>
-        <a href="#">Install Guide</a>
-      </div>
-      <div class="social">
-        <a href="#" class="facebook"></a>
-        <a href="#" class="twitter"></a>
-        <a href="#" class="instagram"></a>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+    <script>
+      let hamburger = document.getElementById("hamburger");
+      let mobile = document.getElementById("mobile");
+      hamburger.addEventListener('click', ()=>{
+        console.log("hamburger clicked")
+        if (mobile.style.display === "inline-block") {
+          mobile.style.display = "none";
+        } else {
+          mobile.style.display = "inline-block";
+        }
+      });
+    </script>
+  </body>
 </html>
