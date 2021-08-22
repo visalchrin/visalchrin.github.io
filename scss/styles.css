@@ -225,7 +225,7 @@ p {
 
 .header__container .logo .hamburger {
   float: right;
-  margin-right: 20px;
+  margin-right: 0px;
 }
 
 @media screen and (min-width: 699px) {
@@ -436,7 +436,7 @@ p {
 }
 
 .features__caption {
-  margin-top: 20px;
+  margin: 50px 0;
   text-align: center;
 }
 
