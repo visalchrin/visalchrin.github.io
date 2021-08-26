@@ -70,7 +70,7 @@ button {
   text-decoration: none;
   outline: none;
   border: none;
-  background-color: #3cb4ac;
+  background-color: #147b74;
   padding: 15px;
   border-radius: 20px;
   color: #ffffff;
@@ -787,7 +787,8 @@ button:hover {
   border-radius: 20px;
   text-align: center;
   padding: 20px 20px;
-  display: none;
+  display: -ms-grid;
+  display: grid;
   z-index: 4000;
   top: 50%;
   left: 50%;

@@ -73,6 +73,11 @@ closeModalBtn.addEventListener("click", () => {
   document.querySelectorAll(".modal__item-cta").forEach((cta) => {
     cta.style.display = "none";
   });
+
+  // unchecked cta button
+  document.querySelectorAll(".radio").forEach((radio) => {
+    radio.checked = false;
+  });
 });
 
 // input radio event 
@@ -100,10 +105,11 @@ document.querySelectorAll(".radio").forEach((elm) =>{
 
 // continue button
 ContinueBtn.forEach((button) => {
-  button.addEventListener("click", ()=>{
+  button.addEventListener("click", (event)=>{
+    event.preventDefault();
     console.log("continue clicked");
-    modal.style.display = "none";
     complete.style.display = "block";
+    modal.style.display = "none";
   });
 });
 
