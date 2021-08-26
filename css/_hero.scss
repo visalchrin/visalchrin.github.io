@@ -1,0 +1,77 @@
+.hero {
+  position: relative;
+  transform: translateY(-80px);
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+  place-items: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+
+  @include breakpoint-less(small) {
+    margin: 0 10px;
+  }
+
+  h2 {
+    padding-top: 20px;
+  }
+  &__btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    place-items: center;
+    @include breakpoint(medium) {
+      column-gap: 60px;
+      .bookmark-mobile {
+        display: none;
+      }
+    }
+
+    .bookmark {
+      font-weight: 700;
+      padding-left: 30px;
+      position: relative;
+      background-color: lightgray;
+
+      @include breakpoint-less(small) {
+        display: none;
+      }
+
+      &:hover {
+        color: $Dark-cyan;
+        svg {
+          fill: red;
+        }
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        background-image: url("../image/icon-bookmark.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 47px;
+        height: 47px;
+        top: 0;
+        left: -2px;
+        background-size: cover;
+      }
+    }
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    background-image: url("../image/logo-mastercraft.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: -5px;
+  }
+}

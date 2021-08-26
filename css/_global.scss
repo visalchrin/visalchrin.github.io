@@ -1,0 +1,152 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-body;
+  font-size: 1rem;
+  z-index: 1;
+  background-color: $White-bg;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  &:hover {
+    text-decoration: underline;
+    color: $Dark-gray;
+  }
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+// input
+input,
+.input {
+  text-align: center;
+  font-weight: 700;
+  outline: none;
+  // border: none;
+  padding: 10px 0;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100px;
+}
+
+// button
+.button,
+button {
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  background-color: $Moderate-cyan;
+  padding: 15px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 170px;
+
+  transition: all 150ms ease-in-out;
+  @include breakpoint(medium) {
+    width: 200px;
+    padding: 15px 10px;
+  }
+
+  .bookmark {
+    border: 1px solid red;
+    background-color: #ffffff;
+  }
+
+  &:hover {
+    background-color: $Dark-cyan;
+    text-decoration: none;
+  }
+}
+
+// button off
+.outofstock {
+  background-color: $Dark-gray;
+  &:hover {
+    background-color: $Dark-gray;
+  }
+}
+
+// overlay
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), #ffffff);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay-full {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  cursor: pointer;
+}
+
+// container
+.container {
+  max-width: 350px;
+  margin: 0 auto;
+  // background-color: #ffffff;
+  // border-radius: 20px;
+  // border: 1px solid #ffffff;
+
+  @include breakpoint(medium) {
+    max-width: 600px;
+  }
+}
+
+// off state
+.off {
+  opacity: 0.5;
+}
