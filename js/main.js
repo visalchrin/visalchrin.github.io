@@ -6,7 +6,7 @@ let mobile_menu = document.getElementById("menuMobile");
 let projectBtn = document.getElementById("project-Btn");
 let modal = document.getElementById("modal");
 let closeModalBtn = document.getElementById("close-modal");
-let continueBtn = document.querySelectorAll(".continue");
+let ContinueBtn = document.querySelectorAll(".continue");
 let complete = document.querySelector(".complete");
 let gotItBtn = document.querySelector(".got-it");
 let selectBtn = document.querySelectorAll(".select");
@@ -104,10 +104,9 @@ document.querySelectorAll(".radio").forEach((elm) =>{
 });
 
 // continue button
-continueBtn.forEach((button) => {
+ContinueBtn.forEach((button) => {
   button.addEventListener("click", (event)=>{
     event.preventDefault();
-    console.log("continue clicked");
     complete.style.display = "block";
     modal.style.display = "none";
   });
