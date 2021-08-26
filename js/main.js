@@ -104,7 +104,7 @@ document.querySelectorAll(".radio").forEach((elm) =>{
 });
 
 // continue button
-ContinueBtn.forEach((button) => {
+continueBtn.forEach((button) => {
   button.addEventListener("click", (event)=>{
     event.preventDefault();
     console.log("continue clicked");
