@@ -1,0 +1,69 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1rem;
+  font-family: $font-family;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @include breakpoint-less(small) {
+    // max-width: 320px;
+  }
+}
+h1 {
+  font-size: 1.7rem;
+  font-weight: 800;
+
+  @include breakpoint(medium) {
+    font-size: 2rem;
+  }
+}
+
+h4 {
+  color: $Grayish-Blue;
+  @include breakpoint-less(small) {
+    font-size: 0.8rem;
+  }
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+.button,
+button {
+  font-size: 0.9rem;
+  font-weight: 600;
+  outline: none;
+  text-decoration: none;
+  border: 1px solid $Dark-Desaturated-Blue;
+  background-color: $Dark-Desaturated-Blue;
+  color: #ffff;
+  padding: 10px 10px;
+  border-radius: 15px;
+  transition: all 150ms ease-in-out;
+  width: 200px;
+
+  @include breakpoint-less(small) {
+    margin: 20px 0;
+  }
+
+  &:hover {
+    border: 1px solid $Grayish-Blue;
+    background-color: $Grayish-Blue;
+  }
+}
