@@ -37,13 +37,13 @@ const progress = document.getElementById("progress"),
       }
 
       // change options 
-      switchBtn.addEventListener("input",()=> {
+      switchBtn.addEventListener("change",()=> {
         let progress = slider.value;
         handleprice(progress);
       });
 
       // slider handle
-      slider.addEventListener("input", (e)=> {
+      slider.addEventListener("change", (e)=> {
         let progressVal = e.target.value;
         console.log(progressVal);
         handleprice(progressVal);
